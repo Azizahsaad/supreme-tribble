@@ -1,0 +1,55 @@
+public class Main {
+    public static void main(String[] args) {
+        public class Emplyee {
+            public int emp_ID;
+            public String name;
+            public String depart;
+            public double salary;
+            public double bonus;
+            public boolean resident;
+            public Emplyee(){
+            }
+
+            public Emplyee(int emp_ID , String name){
+                this.emp_ID=emp_ID;
+                this.name=name
+            }
+            public Emplyee(int emp_ID , String name , boolean resident){
+                this.emp_ID=emp_ID;
+                this.name=name ;
+                this.resident=resident;
+            }
+
+            public Emplyee(int emp_ID , String name , String depart, double salary,double bonus,
+                           boolean resident){
+                this.emp_ID=emp_ID;
+                this.name=name ;
+                this.resident=resident;
+                this.depart=depart;
+                this.salary=salary;
+                this.bonus=bonus
+            }
+
+            public void setSalary(double salary) {
+                this.salary = salary;
+            }
+
+            public void setSalary(double salary ,double bonus ) {
+                this.salary = salary;
+                this.bonus=bonus
+            }
+            public void setDepart(String depart) {
+                this.depart = depart;
+            }
+            public void setEmp_ID(int emp_ID) {
+                this.emp_ID = emp_ID;
+            }
+
+            public void print-EMP-Data() {
+                System.out.print("emp_ID :"+emp_ID + "name: " + name+"depart:"+depart+"salary :"+salary+"bonus :"+bonus+"resident :"+resident);
+            }
+
+
+        }
+    }
+}
